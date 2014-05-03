@@ -21,7 +21,7 @@ void loop()
   temp = temp * 0.48828125;
   Serial.print("TEMP CELSIUS: ");
   Serial.print(temp);
-  Serial.print("*C");
+  Serial.print("*C ");
   //converts celsius into fahrenheit 
   temp = temp *9 / 5;
   temp = temp + 32;
