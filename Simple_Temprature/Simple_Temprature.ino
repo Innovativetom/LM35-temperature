@@ -16,19 +16,18 @@ void loop()
   temp = analogRead(tempPin);
   Serial.print("RAW DATA: ");
   Serial.print (temp);
-  Serial.print(" ");
+  Serial.println(" ");
   //converts raw data into degrees celsius and prints it out
   temp = temp * 0.48828125;
-  Serial.print("TEMP CELSIUS: ");
+  Serial.print("CELSIUS: ");
   Serial.print(temp);
-  Serial.print("*C ");
+  Serial.println("*C ");
   //converts celsius into fahrenheit 
   temp = temp *9 / 5;
   temp = temp + 32;
-  Serial.print("TEMP FAHRENHEIT: ");
+  Serial.print("FAHRENHEIT: ");
   Serial.print(temp);
   Serial.println("*F");
-  
   delay(sampleTime);
 
 }
