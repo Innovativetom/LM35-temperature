@@ -18,6 +18,7 @@ void loop()
   Serial.print (temp);
   Serial.println(" ");
   //converts raw data into degrees celsius and prints it out
+  // 500mV/1024=.48828125
   temp = temp * 0.48828125;
   Serial.print("CELSIUS: ");
   Serial.print(temp);
