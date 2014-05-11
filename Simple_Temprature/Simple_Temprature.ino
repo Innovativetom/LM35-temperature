@@ -1,5 +1,5 @@
 /*
-Simple Temprature uses the lm35 in the basic centigrade temperature configuration
+Simple Temperature uses the lm35 in the basic centigrade temperature configuration
 */
 float temp;
 int tempPin = 2; // analog input pin
